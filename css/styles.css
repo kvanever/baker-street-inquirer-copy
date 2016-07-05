@@ -1,1 +1,29 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+
 /*This file is for your custom css.  All yours*/
+.wrapper {
+  width: 93.75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.logo {
+  background-image: url(../img/logo-bg.png);
+  background-repeat: no-repeat;
+}
+
+.content {
+  flex-grow: 2;
+}
