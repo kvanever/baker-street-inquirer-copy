@@ -42,15 +42,15 @@ body {
   position: relative;
 }
 
+.nav-item:nth-child(2) {
+  order: 1;
+}
+
 img#logo-text {
   position: absolute;
   top: 7em;
   left: 50%;
   transform: translate(-50%, 0);
-}
-
-.content {
-
 }
 
 .description h2, .gallery h3 {
@@ -62,7 +62,21 @@ img#logo-text {
   flex-direction: row;
   justify-content: space-around;
 }
+.nav-item{
+  padding: 1em 5em 3em;
+  text-transform: uppercase;
+  color:#890101;
+  letter-spacing: 0.1em;
+  font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  border-bottom: .2em solid red;
 
+}
+.nav-title{
+  font-size: .5em;
+  display: block;
+  text-align: center;
+
+}
 .gallery {
   flex-shrink: 1;
 }
