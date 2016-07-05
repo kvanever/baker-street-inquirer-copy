@@ -7,21 +7,32 @@
             box-sizing: border-box;
 }
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}
+}*/
 
 /* End for testing */
 
 /*This file is for your custom css.  All yours*/
+
+@font-face {
+    font-family: "hoefler";
+    src: url(../fonts/Hoefler-Text.ttf);
+}
+@font-face {
+    font-family: "cambria";
+    src: url(../fonts/Cambria.ttf);
+}
 body {
   background-image: url(../img/rag.png);
   background-repeat: repeat-x;
+  background-color: #E4E4E4;
+  color:rgba(0, 0, 0, 0.82);
 }
 
 .wrapper {
@@ -42,10 +53,6 @@ body {
   position: relative;
 }
 
-.nav-item:nth-child(2) {
-  order: 1;
-}
-
 img#logo-text {
   position: absolute;
   top: 7em;
@@ -57,28 +64,57 @@ img#logo-text {
   text-align: center;
 }
 
+h2 {
+  font-family: "hoefler";
+  font-size: 2em;
+  font-weight:lighter;
+}
+
+h3 {
+  font-family: Cambria;
+  text-transform: lowercase;
+  font-size: 1.5em;
+  font-weight: lighter;
+  background: url("../img/ornament.png") no-repeat center bottom;
+}
+
+#victors-villains-hide-border {
+  background-color: #E4E4E4;
+  padding: 1em;
+  line-height: 2em;
+}
+
 .nav {
+  margin-top: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.nav-item{
-  padding: 1em 5em 3em;
+
+.nav-item {
+  padding: 1em 14em 3em;
   text-transform: uppercase;
   color:#890101;
   letter-spacing: 0.1em;
   font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  border-bottom: .2em solid red;
-
+  background: url("../img/ornament.png") no-repeat 0 100%;
 }
+
+.nav-item:hover {
+  background-position: 50% 100%;
+  color: #df3030;
+}
+
 .nav-title{
   font-size: .5em;
   display: block;
   text-align: center;
-
 }
+
 .gallery {
   flex-shrink: 1;
+
+
 }
 
 .characters {
@@ -92,12 +128,30 @@ img#logo-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgb(137, 1, 1);
+  text-transform: uppercase;
+  text-align: center;
+
 }
 
 .character-card img {
   width: 84%;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.description p{
+  font-family: "cambria";
+}
+
+.footer {
+  background: url("../img/ornament.png") no-repeat 50%;
+  background-origin: padding-box;
+  background-position: top center;
+  padding: 2em;
 }
 
 .footer p {
   text-align: center;
+  font-family: "cambria";
+  font-size: .75em;
 }
