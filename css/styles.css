@@ -1,4 +1,11 @@
 /* For testing only */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
 
 *:not(body):not(html) {
   box-sizing:border-box;
@@ -26,17 +33,57 @@ body {
 }
 
 .logo {
-  background-image: url(../img/logo-bg.png);
-  background-repeat: no-repeat;
-  width: 31.874617%;
+  background: url(../img/logo-bg.png) no-repeat center top;
+  flex-shrink: 0;
+  flex-basis: 31.874617%;
+}
+
+.logo-text {
+  position: relative;
+}
+
+img#logo-text {
+  position: absolute;
+  top: 7em;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .content {
-  flex-grow: 2;
+
+}
+
+.description h2, .gallery h3 {
+  text-align: center;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.gallery {
+  flex-shrink: 1;
+}
+
+.characters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-card img {
+  width: 84%;
+}
+
+.footer p {
+  text-align: center;
 }
