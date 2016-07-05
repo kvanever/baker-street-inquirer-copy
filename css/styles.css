@@ -151,6 +151,92 @@ a{
   font-size: .75em;
 }
 
-@media screen and (max-width: 2300px) {
+@media screen and (min-width: 1001px) and (max-width: 1600px) {
+  .characters {
+    flex-wrap: wrap;
+  }
 
+  .character-card {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1000px)  {
+  .characters {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    background: none;
+  }
+
+  .logo-text {
+    text-align: center;
+    margin: inherit 0 0 0;
+    padding: inherit 0 0 0;
+  }
+
+  img#logo-text {
+    position: static;
+    transform: none;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .character-card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .logo {
+    background: none;
+  }
+
+  .logo-text {
+    text-align: center;
+    margin: inherit 0 0 0;
+    padding: inherit 0 0 0;
+  }
+
+  img#logo-text {
+    position: static;
+    transform: none;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .character-card {
+    width: 90%;
+  }
+
+  .characters {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-item {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 90%;
+    text-transform: uppercase;
+    background-color: #890101;
+    color: rgba(255, 255, 255, 0.82);
+    letter-spacing: 0.1em;
+    background-image: none;
+    font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    text-align: center;
+  }
+
+  .footer {
+    max-width: 90%;
+    width: 90%;
+  }
 }
