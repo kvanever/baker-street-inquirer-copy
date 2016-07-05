@@ -46,6 +46,10 @@ img#logo-text {
   transform: translate(-50%, 0);
 }
 
+.content {
+  flex-shrink: 1;
+}
+
 .description h2, .gallery h3 {
   text-align: center;
 }
@@ -78,12 +82,14 @@ h3 {
 }
 
 .nav-item {
-  padding: 1em 14em 3em;
+  padding: 1em 1em 3em;
+  width: 31.121642969984202211%;
   text-transform: uppercase;
   color:#890101;
   letter-spacing: 0.1em;
   font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
   background: url("../img/ornament.png") no-repeat 0 100%;
+  text-align: center;
 }
 
 .nav-item:hover {
@@ -143,4 +149,8 @@ a{
   text-align: center;
   font-family: "cambria";
   font-size: .75em;
+}
+
+@media screen and (max-width: 2300px) {
+
 }
